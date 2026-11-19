@@ -19,6 +19,6 @@ function sendReq(){
 const name=document.getElementById('name').value.trim(), phone=document.getElementById('phone').value.trim(), services=[...document.querySelectorAll('input[type=checkbox]:checked')].map(c=>c.value);
 if(!name){alert('പേര് നൽകുക');return}if(!phone){alert('ഫോൺ നമ്പർ നൽകുക');return}if(!services.length){alert('സർവീസ് തിരഞ്ഞെടുക്കുക');return}
 const msg=`Akshara Online Service - New Enquiry%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ASelected Services:%0A${services.map(s=>'• '+encodeURIComponent(s)).join('%0A')}`;
-window.open('https://wa.me/9198466663059?text='+msg,'_blank')
+window.open('https://wa.me/98466663059?text='+msg,'_blank')
 }
 </script></body></html>
